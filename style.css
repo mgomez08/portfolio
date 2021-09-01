@@ -1,0 +1,398 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #05c7f2;
+  --secondary-color: #4384d9;
+  --bg-dark: #000014;
+  --bg-normal: #010440;
+  --bg-light: #020659;
+}
+
+html {
+  color: #c8cbd1;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  /* overflow-x: hidden; */
+  background-color: var(--bg-dark);
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Press Start 2P", sans-serif;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--primary-color);
+  font-family: "Press Start 2P", sans-serif;
+  line-height: 1.2;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+button {
+  all: unset;
+}
+
+@keyframes scrollImg {
+  from {
+    object-position: 0 100%;
+    -o-object-position: 0 100%;
+  }
+  to {
+    object-position: 0 0;
+    -o-object-position: 0 0;
+  }
+}
+
+/* GLOBAL CLASSES */
+.container {
+  width: 100%;
+  padding: 3rem 10rem;
+}
+.col {
+  width: 50%;
+}
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.btn:hover {
+  filter: brightness(1.2);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: black;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: black;
+}
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.icon-btn {
+  width: 24px;
+  margin-right: 5px;
+}
+.bg-white {
+  background-color: white;
+}
+/* END GLOBAL CLASSES */
+
+/* STYLES HERO */
+.hero-container {
+  height: 100vh;
+  background-image: url("./background-hero.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.my-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+/* END STYLES HERO */
+
+/* STYLES ABOUT ME */
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-img-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.img-profile {
+  width: 100%;
+  height: 50%;
+  max-width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container-description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.title-description {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.react-img {
+  width: 64px;
+}
+.skills {
+  font-family: "Press Start 2P", sans-serif;
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  max-width: 360px;
+}
+.skills-list li {
+  display: flex;
+  max-width: 150px;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 8px;
+}
+.icon-skill {
+  width: 32px;
+  padding-right: 5px;
+}
+/* END STYLES ABOUT ME */
+
+/* STYLES MY PROJECTS */
+.projects {
+  background-color: var(--bg-normal);
+}
+.title-projects {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.project {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.container-preview {
+  height: 400px;
+}
+.container-preview:hover {
+  transform: scale(1.04);
+  transition: 1s;
+}
+.project-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  border-radius: 10px;
+}
+.container-preview:hover .project-preview {
+  -webkit-animation-name: scrollImg;
+  animation-name: scrollImg;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+.project-title {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 15px 0 10px;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+.project-description {
+  margin-bottom: 10px;
+}
+/* END STYLES MY PROJECTS */
+
+/* STYLES EDUCATION */
+.title-educations {
+  text-align: center;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+.educations-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.container-img-education {
+  height: 400px;
+}
+.img-education {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.title-education {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.platzi {
+  color: #aeda00;
+}
+.itfip {
+  color: #de0e14;
+}
+.udemy {
+  color: #ae4af1;
+}
+.education-finished-date {
+  margin-bottom: 10px;
+}
+/* END STYLES EDUCATION */
+
+/* STYLES FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+footer p {
+  text-align: center;
+}
+.social-media {
+  margin-top: 10px;
+}
+.social-item {
+  border-radius: 20px;
+  width: 48px;
+  margin-right: 10px;
+}
+.github {
+  background-color: white;
+}
+/* END STYLES FOOTER*/
+
+@media screen and (max-width: 1280px) {
+  /* GLOBAL CLASSES */
+  .container {
+    padding: 3rem 5rem;
+  }
+  /* END GLOBAL CLASSES */
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* GLOBAL CLASSES */
+  .container {
+    padding: 3rem 2.5rem;
+  }
+  .col {
+    width: 100%;
+  }
+  /* END GLOBAL CLASSES */
+
+  /* STYLES HERO */
+  .hero-container {
+    min-height: 50vh;
+    height: 50vh;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .title-description {
+    justify-content: center;
+  }
+  /* END STYLES HERO */
+
+  /* STYLES MY PROJECTS */
+  .projects-list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /* END STYLES MY PROJECTS */
+
+  /* STYLES EDUCATION */
+  .educations-list {
+    grid-template-columns: 1fr;
+  }
+  /* END STYLES EDUCATION */
+}
+@media screen and (max-width: 600px) {
+  /* GLOBAL CLASSES */
+  .container {
+    padding: 1rem 1rem;
+  }
+  .col {
+    width: 100%;
+  }
+  /* END GLOBAL CLASSES */
+  /* STYLES EDUCATION */
+  .educations-list {
+    grid-template-columns: 1fr;
+  }
+  /* END STYLES EDUCATION */
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  /* GLOBAL CLASSES */
+
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+  /* END GLOBAL CLASSES */
+
+  /* STYLES MY PROJECTS */
+  .container-preview {
+    height: 300px;
+  }
+  /* END STYLES MY PROJECTS */
+
+  /* STYLES EDUCATION */
+  .title-education {
+    font-size: 1rem;
+  }
+  /* END STYLES EDUCATION */
+}
