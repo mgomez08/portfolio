@@ -99,7 +99,52 @@ button {
 .bg-white {
   background-color: white;
 }
+.shadow {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
 /* END GLOBAL CLASSES */
+
+/* STYLES HEADER*/
+header {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  transition: top 0.5s;
+  top: -60px;
+  padding: 0 10rem;
+  width: 100%;
+  z-index: 1;
+}
+.show {
+  top: 0;
+}
+.logo-container {
+  height: 100%;
+  width: 98px;
+  display: flex;
+  align-items: center;
+}
+.logo-container img {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+.menu-item {
+  color: var(--primary-color);
+}
+.menu-item:hover {
+  filter: brightness(1.2);
+}
+/* END STYLES HEADER*/
 
 /* STYLES HERO */
 .hero-container {
@@ -301,6 +346,12 @@ footer p {
     padding: 3rem 5rem;
   }
   /* END GLOBAL CLASSES */
+
+  /* STYLES HEADER */
+  header {
+    padding: 0 5rem;
+  }
+  /* END STYLES HEADER */
 }
 @media screen and (max-width: 900px) {
   h1 {
@@ -321,6 +372,12 @@ footer p {
     width: 100%;
   }
   /* END GLOBAL CLASSES */
+
+  /* STYLES HEADER */
+  header {
+    padding: 0 2.5rem;
+  }
+  /* END STYLES HEADER */
 
   /* STYLES HERO */
   .hero-container {
@@ -357,6 +414,13 @@ footer p {
     width: 100%;
   }
   /* END GLOBAL CLASSES */
+
+  /* STYLES HEADER */
+  header {
+    padding: 0 1rem;
+  }
+  /* END STYLES HEADER */
+
   /* STYLES EDUCATION */
   .educations-list {
     grid-template-columns: 1fr;
