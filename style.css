@@ -155,9 +155,11 @@ header {
   display: none;
   cursor: pointer;
   height: 32px;
+  width: 32px;
 }
 .menu-dropdown img {
   object-fit: cover;
+  width: 100%;
 }
 .active {
   transform: translate(600px);
