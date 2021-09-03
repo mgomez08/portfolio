@@ -321,6 +321,26 @@ header {
 .project-description {
   margin-bottom: 10px;
 }
+.title-technologies {
+  margin-bottom: 8px;
+}
+.technologies {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.technology {
+  background-color: #1c2541;
+  padding: 8px;
+  border-radius: 15px;
+}
+.technology span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
 /* END STYLES MY PROJECTS */
 
 /* STYLES EDUCATION */
