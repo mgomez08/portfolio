@@ -28,16 +28,16 @@ iconMenuMobile.addEventListener("click", function (e) {
   toggleMenu();
   if (document.querySelector(".active.menu-mobile")) {
     menuIsOpen = false;
-    e.target.setAttribute("src", "./Menu.png");
+    e.target.setAttribute("src", "./images/icons/menu.png");
   } else {
-    e.target.setAttribute("src", "./Close.png");
+    e.target.setAttribute("src", "./images/icons/close.png");
     menuIsOpen = true;
   }
 });
 window.addEventListener("click", function (e) {
   if (e.target !== iconMenuMobile && menuIsOpen && e.target !== menuMobile) {
     toggleMenu();
-    iconMenuMobile.setAttribute("src", "./Menu.png");
+    iconMenuMobile.setAttribute("src", "./images/icons/menu.png");
     menuIsOpen = false;
   }
 });
