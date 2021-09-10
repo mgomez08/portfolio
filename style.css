@@ -13,7 +13,6 @@
   --bg-normal: #010440;
   --bg-light: #020659;
 }
-
 html {
   color: #c8cbd1;
   font-family: "Roboto", sans-serif;
@@ -321,8 +320,8 @@ header {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
 }
 .project-title {
   font-family: "Press Start 2P", sans-serif;
