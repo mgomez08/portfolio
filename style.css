@@ -96,7 +96,7 @@ button {
   color: black;
 }
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: #eeeeee;
   color: black;
 }
 .btn-icon {
