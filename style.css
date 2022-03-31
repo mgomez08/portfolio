@@ -12,6 +12,7 @@
   --bg-dark: #000014;
   --bg-normal: #010440;
   --bg-light: #020659;
+  --size: 8px;
 }
 html {
   color: #c8cbd1;
@@ -87,6 +88,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 5px;
+  text-align: center;
 }
 .btn:hover {
   filter: brightness(1.2);
@@ -98,6 +100,11 @@ button {
 .btn-secondary {
   background-color: #eeeeee;
   color: black;
+}
+.btn-info {
+  background-color: #ffc107;
+  color: black;
+  min-width: 100px;
 }
 .btn-icon {
   display: inline-flex;
@@ -115,6 +122,21 @@ button {
 }
 .disableScroll {
   overflow: hidden;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.my-1 {
+  margin: var(--size) 0;
+}
+.my-2 {
+  margin: calc(var(--size) * 2) 0;
 }
 /* END GLOBAL CLASSES */
 
