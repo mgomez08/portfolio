@@ -138,6 +138,9 @@ button {
 .my-2 {
   margin: calc(var(--size) * 2) 0;
 }
+.underline {
+  text-decoration: underline;
+}
 /* END GLOBAL CLASSES */
 
 /* STYLES HEADER*/
