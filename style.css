@@ -310,7 +310,7 @@ header {
 
 /* STYLES MY PROJECTS */
 .projects {
-  background-color: var(--bg-normal);
+  background-color: var(--bg-dark);
 }
 .title-projects {
   text-align: center;
@@ -379,7 +379,62 @@ header {
 }
 /* END STYLES MY PROJECTS */
 
+/* STYLES EXPERIENCES */
+.experiences {
+  background-color: var(--bg-normal);
+}
+.title-experiences {
+  text-align: center;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+.experiences-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.experience {
+  margin-bottom: 20px;
+}
+.experience--buzzly .title-experience.buzzly {
+  color: #fff;
+}
+.experience--buzzly .container-preview-experience {
+  margin: 1rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.experience--buzzly .container-preview-experience img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.container-preview-experience {
+  height: 280px;
+}
+.title-experience {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.title-experience.buzzly {
+  color: var(--primary-color);
+}
+.experience-date {
+  margin-bottom: 10px;
+}
+.experience-description {
+  margin-bottom: 0;
+}
+/* END STYLES EXPERIENCES */
+
 /* STYLES EDUCATION */
+.educations {
+  background-color: var(--bg-normal);
+}
 .title-educations {
   text-align: center;
   margin-bottom: 20px;
@@ -518,6 +573,12 @@ footer p {
   }
   /* END STYLES MY PROJECTS */
 
+  /* STYLES EXPERIENCES */
+  .experiences-list {
+    grid-template-columns: 1fr;
+  }
+  /* END STYLES EXPERIENCES */
+
   /* STYLES EDUCATION */
   .educations-list {
     grid-template-columns: 1fr;
@@ -539,6 +600,12 @@ footer p {
     padding: 0 1rem;
   }
   /* END STYLES HEADER */
+
+  /* STYLES EXPERIENCES */
+  .experiences-list {
+    grid-template-columns: 1fr;
+  }
+  /* END STYLES EXPERIENCES */
 
   /* STYLES EDUCATION */
   .educations-list {
@@ -572,6 +639,12 @@ footer p {
     height: 300px;
   }
   /* END STYLES MY PROJECTS */
+
+  /* STYLES EXPERIENCES */
+  .container-preview-experience {
+    height: 220px;
+  }
+  /* END STYLES EXPERIENCES */
 
   /* STYLES EDUCATION */
   .title-education {

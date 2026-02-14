@@ -1,559 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marlon Gómez | Frontend Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <meta
-      name="description"
-      content="Como Frontend Developer, quiero generar valor a las personas a través del Desarrollo Web, empleando mis conocimientos y aptitudes obtenidas con mis proyectos personales, por lo que aspiro a pertenecer a una empresa que genere un gran impacto."
-    />
-    <link rel="canonical" href="https://mgomez08.github.io/portfolio/" />
-    <link
-      rel="shortcut icon"
-      href="./images/icons/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="32x32"
-      href="/images/icons/apple-touch-icon.png"
-    />
-    <meta property="og:title" content="Marlon Gómez | Frontend Developer" />
-    <meta property="og:site_name" content="mgomez08.github.io" />
-    <meta property="og:url" content="https://mgomez08.github.io/portfolio/" />
-    <meta
-      property="og:description"
-      content="Como Frontend Developer, quiero generar valor a las personas a través del Desarrollo Web, empleando mis conocimientos y aptitudes obtenidas con mis proyectos personales, por lo que aspiro a pertenecer a una empresa que genere un gran impacto."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/icons/apple-touch-icon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="header" class="shadow">
-      <a class="logo-container" href="#">
-        <img
-          loading="lazy"
-          src="./images/icons/logo.png"
-          alt="Logo de MagoDev"
-        />
-      </a>
-      <nav class="menu">
-        <div class="menu-list">
-          <a class="menu-item" href="#about">Sobre mí</a>
-          <a class="menu-item" href="#projects">Mis proyectos</a>
-          <a class="menu-item" href="#educations">Mi educación</a>
-        </div>
-        <div class="menu-dropdown" id="menu-dropdown">
-          <img
-            loading="lazy"
-            src="./images/icons/menu.png"
-            alt="Menú Icon"
-            id="icon-menu-mobile"
-          />
-        </div>
-      </nav>
-    </header>
-    <div class="active menu-mobile" id="menu-mobile">
-      <div class="menu-list-mobile">
-        <a class="menu-item-mobile" href="#about">Sobre mi</a>
-        <a class="menu-item-mobile" href="#projects">Mis proyectos</a>
-        <a class="menu-item-mobile" href="#educations">Mi educación</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlon Gómez | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description"
+    content="Como Frontend Developer, quiero generar valor a las personas a través del Desarrollo Web, empleando mis conocimientos y aptitudes obtenidas con mis proyectos personales, por lo que aspiro a pertenecer a una empresa que genere un gran impacto." />
+  <link rel="canonical" href="https://mgomez08.github.io/portfolio/" />
+  <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="32x32" href="/images/icons/apple-touch-icon.png" />
+  <meta property="og:title" content="Marlon Gómez | Frontend Developer" />
+  <meta property="og:site_name" content="mgomez08.github.io" />
+  <meta property="og:url" content="https://mgomez08.github.io/portfolio/" />
+  <meta property="og:description"
+    content="Como Frontend Developer, quiero generar valor a las personas a través del Desarrollo Web, empleando mis conocimientos y aptitudes obtenidas con mis proyectos personales, por lo que aspiro a pertenecer a una empresa que genere un gran impacto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/icons/apple-touch-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="header" class="shadow">
+    <a class="logo-container" href="#">
+      <img loading="lazy" src="./images/icons/logo.png" alt="Logo de MagoDev" />
+    </a>
+    <nav class="menu">
+      <div class="menu-list">
+        <a class="menu-item" href="#about">Sobre mí</a>
+        <a class="menu-item" href="#experience">Experiencia</a>
+        <a class="menu-item" href="#projects">Mis proyectos</a>
+        <a class="menu-item" href="#educations">Mi educación</a>
       </div>
-      <div class="social-media-menu">
-        <a rel="noreferrer" href="https://github.com/mgomez08" target="_blank">
-          <img
-            loading="lazy"
-            src="./images/icons/github.png"
-            class="social-item bg-white"
-            alt="Icono de Github"
-          />
-        </a>
-        <a
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/magodev/"
-          target="_blank bg-white"
-        >
-          <img
-            loading="lazy"
-            src="./images/icons/linkedin.png"
-            class="social-item bg-white"
-            alt="Icono de Linkedin"
-          />
-        </a>
+      <div class="menu-dropdown" id="menu-dropdown">
+        <img loading="lazy" src="./images/icons/menu.png" alt="Menú Icon" id="icon-menu-mobile" />
       </div>
+    </nav>
+  </header>
+  <div class="active menu-mobile" id="menu-mobile">
+    <div class="menu-list-mobile">
+      <a class="menu-item-mobile" href="#about">Sobre mi</a>
+      <a class="menu-item-mobile" href="#experience">Experiencia</a>
+      <a class="menu-item-mobile" href="#projects">Mis proyectos</a>
+      <a class="menu-item-mobile" href="#educations">Mi educación</a>
     </div>
-    <main id="main">
-      <section class="container hero-container">
-        <div class="my-name">
-          <h1>Marlon Gómez</h1>
-          <h2>Frontend Developer</h2>
-          <div class="social-media">
-            <a
-              rel="noreferrer"
-              href="https://github.com/mgomez08"
-              target="_blank"
-            >
-              <img
-                src="images/icons/github.png"
-                class="social-item bg-white"
-                alt="Icono de Github"
-              />
-            </a>
-            <a
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/magodev/"
-              target="_blank bg-white"
-            >
-              <img
-                src="./images/icons/linkedin.png"
-                class="social-item bg-white"
-                alt="Icono de Linkedin"
-              />
-            </a>
-          </div>
+    <div class="social-media-menu">
+      <a rel="noreferrer" href="https://github.com/mgomez08" target="_blank">
+        <img loading="lazy" src="./images/icons/github.png" class="social-item bg-white" alt="Icono de Github" />
+      </a>
+      <a rel="noreferrer" href="https://www.linkedin.com/in/magodev/" target="_blank bg-white">
+        <img loading="lazy" src="./images/icons/linkedin.png" class="social-item bg-white" alt="Icono de Linkedin" />
+      </a>
+    </div>
+  </div>
+  <main id="main">
+    <section class="container hero-container">
+      <div class="my-name">
+        <h1>Marlon Gómez</h1>
+        <h2>Frontend Developer</h2>
+        <div class="social-media">
+          <a rel="noreferrer" href="https://github.com/mgomez08" target="_blank">
+            <img src="images/icons/github.png" class="social-item bg-white" alt="Icono de Github" />
+          </a>
+          <a rel="noreferrer" href="https://www.linkedin.com/in/magodev/" target="_blank bg-white">
+            <img src="./images/icons/linkedin.png" class="social-item bg-white" alt="Icono de Linkedin" />
+          </a>
         </div>
-      </section>
-      <section class="container about" id="about">
-        <div class="col container-img-profile">
-          <img
-            class="img-profile"
-            src="./images/profile.jpg"
-            alt="Foto de Perfil de Marlon Gómez"
-          />
-        </div>
-        <div class="col container-description">
-          <div class="title-description">
-            <h3>¡Hola!</h3>
-            <img
-              class="react-img"
-              src="./images/icons/react2.png"
-              alt="Icono de React.js"
-            />
-          </div>
-          <p class="description">
-            Como Frontend Developer, quiero generar valor a las personas a
-            través del Desarrollo Web, empleando mis conocimientos y aptitudes
-            obtenidas con mis proyectos personales, por lo que aspiro a
-            pertenecer a una empresa que genere un gran impacto.
-          </p>
-          <p class="skills">Mis habilidades:</p>
-          <ul class="skills-list">
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/react.png"
-                alt="Icono de React.js"
-              />
-              <p>React</p>
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/html5.png"
-                alt="Icono de HTML5"
-              />
-              <p>HTML5</p>
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/redux.png"
-                alt="Icono de Redux"
-              />
-              <p>Redux</p>
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/css3.png"
-                alt="Icono de Css"
-              />
-              <p>CSS</p>
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/git.png"
-                alt="Icono de Git"
-              />
-              <p>Git</p>
-            </li>
-            <li>
-              <img
-                loading="lazy"
-                class="icon-skill"
-                src="./images/icons/javascript.png"
-                alt="Icono de Javascript"
-              />
-              <p>JavaScript</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section
-        class="container projects flex flex-column align-center"
-        id="projects"
-      >
-        <h3 class="title-projects">Mis proyectos</h3>
-        <div class="projects-list">
-          <div class="project">
-            <figure class="container-preview shadow">
-              <img
-                loading="lazy"
-                src="./images/projects/appanime.png"
-                alt="Preview del Proyecto Anime app"
-                class="project-preview"
-              />
-            </figure>
-            <p class="project-title">Anime app</p>
-            <p class="project-description">
-              Es una wiki en la que podrá consultar información sobre sus animes
-              de interés, también qué animes están en tendencia semanalmente,
-              los mejores evaluados y los más populares.
-            </p>
-            <p class="title-technologies">Tecnologías y conceptos usados:</p>
-            <div class="technologies">
-              <div class="technology">
-                <span> React </span>
-              </div>
-              <div class="technology">
-                <span> Material-UI </span>
-              </div>
-              <div class="technology">
-                <span> React-Helmet </span>
-              </div>
-              <div class="technology">
-                <span> Lazy Loading </span>
-              </div>
-              <div class="technology">
-                <span> Infinity Scroll </span>
-              </div>
-            </div>
-            <a
-              rel="noreferrer"
-              href="https://appanime.vercel.app/"
-              class="btn btn-primary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/forward-arrow.png"
-                alt="Icono de Hipervínculo"
-                class="icon-btn"
-              />
-              Ver online
-            </a>
-            <a
-              rel="noreferrer"
-              href="https://github.com/mgomez08/animeapp"
-              class="btn btn-secondary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/github.png"
-                alt="Icono de Github"
-                class="icon-btn"
-              />
-              Ver repositorio
-            </a>
-          </div>
-          <div class="project">
-            <figure class="container-preview shadow">
-              <img
-                loading="lazy"
-                src="./images/projects/challenge-alkemy-heroes.jpg"
-                alt="Preview del Proyecto Challenge Alkemy Heroes"
-                class="project-preview"
-              />
-            </figure>
-            <p class="project-title">Challenge Alkemy Heroes</p>
-            <p class="project-description">
-              Es una aplicación que permite la creación de un equipo de
-              superheroes, con diferentes powerstats y características.
-            </p>
-            <p class="title-technologies">Tecnologías y conceptos usados:</p>
-            <div class="technologies">
-              <div class="technology">
-                <span>React</span>
-              </div>
-              <div class="technology">
-                <span>Typescript</span>
-              </div>
-              <div class="technology">
-                <span>Axios</span>
-              </div>
-              <div class="technology">
-                <span>Formik</span>
-              </div>
-              <div class="technology">
-                <span>Bootstrap</span>
-              </div>
-              <div class="technology">
-                <span>React Router Dom v6</span>
-              </div>
-            </div>
-            <a
-              rel="noreferrer"
-              href="https://heroes-challenge-alkemy.vercel.app/"
-              class="btn btn-primary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/forward-arrow.png"
-                class="icon-btn"
-                alt="Icono de Hipervínculo"
-              />
-              Ver online</a
-            >
-            <a
-              rel="noreferrer"
-              href="https://github.com/mgomez08/heroes-challenge-alkemy"
-              class="btn btn-secondary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/github.png"
-                class="icon-btn"
-                alt="Icono de Github"
-              />
-              Ver repositorio
-            </a>
-          </div>
-          <div class="project">
-            <figure class="container-preview shadow">
-              <img
-                loading="lazy"
-                src="./images/projects/CalenderApp.png"
-                alt="Preview del Proyecto Calender App"
-                class="project-preview"
-              />
-            </figure>
-            <p class="project-title">Calendar App</p>
-            <p class="project-description">
-              Es un calendario público para crear eventos de la misma manera que
-              la hace con Google Calendar.
-            </p>
-            <p class="title-technologies">Tecnologías y conceptos usados:</p>
-            <div class="technologies">
-              <div class="technology">
-                <span>React</span>
-              </div>
-              <div class="technology">
-                <span>Redux </span>
-              </div>
-              <div class="technology">
-                <span>Moment</span>
-              </div>
-              <div class="technology">
-                <span>JWTokens </span>
-              </div>
-              <div class="technology">
-                <span>Express </span>
-              </div>
-              <div class="technology">
-                <span>MongoDB y Mongoose</span>
-              </div>
-            </div>
-            <a
-              rel="noreferrer"
-              href="https://appcalendar.vercel.app/"
-              class="btn btn-primary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/forward-arrow.png"
-                class="icon-btn"
-                alt="Icono de Hipervínculo"
-              />
-              Ver online</a
-            >
-            <a
-              rel="noreferrer"
-              href="https://github.com/mgomez08/Calendar-Frontend"
-              class="btn btn-secondary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/github.png"
-                class="icon-btn"
-                alt="Icono de Github"
-              />
-              Ver repositorio
-            </a>
-          </div>
-          <div class="project">
-            <figure class="container-preview shadow">
-              <img
-                loading="lazy"
-                src="./images/projects/stats-preview-card.jpg"
-                alt="Preview del Proyecto Stats preview card component"
-                class="project-preview"
-              />
-            </figure>
-            <p class="project-title">Stats preview component</p>
-            <p class="project-description">
-              Este es un desafío de Frontendmentor, consiste en un componente
-              Card con responsive design sin frameworks.
-            </p>
-            <p class="title-technologies">Tecnologías y conceptos usados:</p>
-            <div class="technologies">
-              <div class="technology">
-                <span>HTML</span>
-              </div>
-              <div class="technology">
-                <span>CSS </span>
-              </div>
-            </div>
-            <a
-              rel="noreferrer"
-              href="https://mgomez08.github.io/Stats-Preview-Card-Component/"
-              class="btn btn-primary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/forward-arrow.png"
-                class="icon-btn"
-                alt="Icono de Hipervínculo"
-              />
-              Ver online</a
-            >
-            <a
-              rel="noreferrer"
-              href="https://github.com/mgomez08/Stats-Preview-Card-Component"
-              class="btn btn-secondary btn-icon"
-              target="_blank"
-            >
-              <img
-                loading="lazy"
-                src="./images/icons/github.png"
-                class="icon-btn"
-                alt="Icono de Github"
-              />
-              Ver repositorio
-            </a>
-          </div>
-        </div>
-        <a
-          rel="noreferrer"
-          href="https://github.com/mgomez08?tab=repositories"
-          target="_blank"
-          class="btn btn-info my-2"
-          >Ver más</a
-        >
-      </section>
-      <section class="container educations" id="educations">
-        <h3 class="title-educations">Mi educación y Certificaciones</h3>
-        <div class="educations-list">
-          <div class="education">
-            <a
-              rel="noreferrer"
-              href="https://assets.alkemy.org/certificates/google-oauth2%7C113015928336095761524/a52e18ee-8ea9-4d35-949f-60b2c2e9c1f7.pdf"
-              class="title-education alkemy underline"
-              target="_blank"
-            >
-              Alkemy - Aceleración en React
-            </a>
-            <p class="education-finished-date">Finalizado en el 2022</p>
-            <p class="education-description">
-              Es una plataforma de entrenamiento en donde desarrolladores de
-              software trainee / junior Aceleran y Certifican sus habilidades en
-              React, a través de la simulación de un ambiente real de trabajo
-              usando metodologías ágiles.
-            </p>
-          </div>
-          <div class="education">
-            <a
-              rel="noreferrer"
-              href="https://platzi.com/p/magodev/"
-              class="title-education platzi underline"
-              target="_blank"
-            >
-              Platzi - Escuela de Desarrollo Web
-            </a>
-            <p class="education-finished-date">2020 - Presente</p>
-            <p class="education-description">
-              Escuela con más de 100 cursos con un 25% aprobado, he logrado
-              aprender y desenvolverme en tecnologías modernas como React,
-              Frameworks de Css, Node con Express.
-            </p>
-          </div>
-          <div class="education">
-            <p class="title-education itfip">ITFIP - Ingeniería de Sistemas</p>
-            <p class="education-finished-date">2018 - Presente</p>
-            <p class="education-description">
-              Actualmente cursando noveno semestre, estoy en la capacidad de
-              diseñar y construir soluciones web empleando las mejores
-              tecnologías y herramientas de desarrollo.
-            </p>
-          </div>
-          <div class="education">
-            <a
-              rel="noreferrer"
-              href="https://www.udemy.com/certificate/UC-9e30aabb-1986-44f1-adef-a15b02cee730/"
-              class="title-education udemy underline"
-              target="_blank"
-            >
-              Udemy - React: De cero a experto(Hooks y MERN)
-            </a>
-            <p class="education-finished-date">Finalizado en el 2021</p>
-            <p class="education-description">
-              Curso de react con 43 horas de duración en el que aprendí a
-              implementar el stack MERN, Context API, Hooks, JWT para
-              Autenticaciones, Testing, CRUD, SASS, Multiple Routers, etc.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="social-media">
-        <a rel="noreferrer" href="https://github.com/mgomez08" target="_blank">
-          <img
-            loading="lazy"
-            src="images/icons/github.png"
-            class="social-item bg-white"
-            alt="Icono de Github"
-          />
-        </a>
-        <a
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/magodev/"
-          target="_blank bg-white"
-        >
-          <img
-            loading="lazy"
-            src="./images/icons/linkedin.png"
-            class="social-item bg-white"
-            alt="Icono de Linkedin"
-          />
-        </a>
       </div>
-      <p>Hecho con 💙 por Marlon Gómez | 2022</p>
-    </footer>
-    <script defer src="./app.js"></script>
-  </body>
+    </section>
+    <section class="container about" id="about">
+      <div class="col container-img-profile">
+        <img class="img-profile" src="./images/profile.jpg" alt="Foto de Perfil de Marlon Gómez" />
+      </div>
+      <div class="col container-description">
+        <div class="title-description">
+          <h3>¡Hola!</h3>
+          <img class="react-img" src="./images/icons/react2.png" alt="Icono de React.js" />
+        </div>
+        <p class="description">
+          Como Frontend Developer, quiero generar valor a las personas a
+          través del Desarrollo Web, empleando mis conocimientos y aptitudes
+          obtenidas con mis proyectos personales, por lo que aspiro a
+          pertenecer a una empresa que genere un gran impacto.
+        </p>
+        <p class="skills">Mis habilidades:</p>
+        <ul class="skills-list">
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/react.png" alt="Icono de React.js" />
+            <p>React</p>
+          </li>
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/html5.png" alt="Icono de HTML5" />
+            <p>HTML5</p>
+          </li>
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/redux.png" alt="Icono de Redux" />
+            <p>Redux</p>
+          </li>
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/css3.png" alt="Icono de Css" />
+            <p>CSS</p>
+          </li>
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/git.png" alt="Icono de Git" />
+            <p>Git</p>
+          </li>
+          <li>
+            <img loading="lazy" class="icon-skill" src="./images/icons/javascript.png" alt="Icono de Javascript" />
+            <p>JavaScript</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container experiences" id="experience">
+      <h3 class="title-experiences">Experiencias Laborales</h3>
+      <div class="experiences-list">
+        <div class="experience experience--buzzly">
+          <a rel="noreferrer" href="https://www.heybuzzly.ai/" class="title-experience buzzly underline"
+            target="_blank">
+            Buzzly — Plataforma de marketing con IA
+          </a>
+          <figure class="container-preview container-preview-experience shadow">
+            <a rel="noreferrer" href="https://www.heybuzzly.ai/" target="_blank">
+              <img loading="lazy" src="./images/work/buzzlyai.png"
+                alt="Buzzly AI - Plataforma de marketing con inteligencia artificial" class="project-preview" />
+            </a>
+          </figure>
+          <p class="experience-date">2022 – Actualidad</p>
+          <p class="experience-description">
+            Desarrollo de una plataforma que crea, gestiona y optimiza
+            campañas publicitarias con inteligencia artificial; genera
+            imágenes y videos publicitarios optimizados para la conversión.
+          </p>
+          <p class="title-technologies" style="margin-top: 10px;">Tecnologías utilizadas:</p>
+          <div class="technologies">
+            <div class="technology"><span>React</span></div>
+            <div class="technology"><span>Node.js</span></div>
+            <div class="technology"><span>Firebase</span></div>
+            <div class="technology"><span>Google Cloud</span></div>
+            <div class="technology"><span>AWS</span></div>
+          </div>
+          <a rel="noreferrer" href="https://www.heybuzzly.ai/" class="btn btn-primary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/forward-arrow.png" alt="Icono de Hipervínculo" class="icon-btn" />
+            Ver online
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container projects flex flex-column align-center" id="projects">
+      <h3 class="title-projects">Mis proyectos</h3>
+      <div class="projects-list">
+        <div class="project">
+          <figure class="container-preview shadow">
+            <img loading="lazy" src="./images/projects/appanime.png" alt="Preview del Proyecto Anime app"
+              class="project-preview" />
+          </figure>
+          <p class="project-title">Anime app</p>
+          <p class="project-description">
+            Es una wiki en la que podrá consultar información sobre sus animes
+            de interés, también qué animes están en tendencia semanalmente,
+            los mejores evaluados y los más populares.
+          </p>
+          <p class="title-technologies">Tecnologías y conceptos usados:</p>
+          <div class="technologies">
+            <div class="technology">
+              <span> React </span>
+            </div>
+            <div class="technology">
+              <span> Material-UI </span>
+            </div>
+            <div class="technology">
+              <span> React-Helmet </span>
+            </div>
+            <div class="technology">
+              <span> Lazy Loading </span>
+            </div>
+            <div class="technology">
+              <span> Infinity Scroll </span>
+            </div>
+          </div>
+          <a rel="noreferrer" href="https://appanime.vercel.app/" class="btn btn-primary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/forward-arrow.png" alt="Icono de Hipervínculo" class="icon-btn" />
+            Ver online
+          </a>
+          <a rel="noreferrer" href="https://github.com/mgomez08/animeapp" class="btn btn-secondary btn-icon"
+            target="_blank">
+            <img loading="lazy" src="./images/icons/github.png" alt="Icono de Github" class="icon-btn" />
+            Ver repositorio
+          </a>
+        </div>
+        <div class="project">
+          <figure class="container-preview shadow">
+            <img loading="lazy" src="./images/projects/challenge-alkemy-heroes.jpg"
+              alt="Preview del Proyecto Challenge Alkemy Heroes" class="project-preview" />
+          </figure>
+          <p class="project-title">Challenge Alkemy Heroes</p>
+          <p class="project-description">
+            Es una aplicación que permite la creación de un equipo de
+            superheroes, con diferentes powerstats y características.
+          </p>
+          <p class="title-technologies">Tecnologías y conceptos usados:</p>
+          <div class="technologies">
+            <div class="technology">
+              <span>React</span>
+            </div>
+            <div class="technology">
+              <span>Typescript</span>
+            </div>
+            <div class="technology">
+              <span>Axios</span>
+            </div>
+            <div class="technology">
+              <span>Formik</span>
+            </div>
+            <div class="technology">
+              <span>Bootstrap</span>
+            </div>
+            <div class="technology">
+              <span>React Router Dom v6</span>
+            </div>
+          </div>
+          <a rel="noreferrer" href="https://heroes-challenge-alkemy.vercel.app/" class="btn btn-primary btn-icon"
+            target="_blank">
+            <img loading="lazy" src="./images/icons/forward-arrow.png" class="icon-btn" alt="Icono de Hipervínculo" />
+            Ver online</a>
+          <a rel="noreferrer" href="https://github.com/mgomez08/heroes-challenge-alkemy"
+            class="btn btn-secondary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/github.png" class="icon-btn" alt="Icono de Github" />
+            Ver repositorio
+          </a>
+        </div>
+        <div class="project">
+          <figure class="container-preview shadow">
+            <img loading="lazy" src="./images/projects/CalenderApp.png" alt="Preview del Proyecto Calender App"
+              class="project-preview" />
+          </figure>
+          <p class="project-title">Calendar App</p>
+          <p class="project-description">
+            Es un calendario público para crear eventos de la misma manera que
+            la hace con Google Calendar.
+          </p>
+          <p class="title-technologies">Tecnologías y conceptos usados:</p>
+          <div class="technologies">
+            <div class="technology">
+              <span>React</span>
+            </div>
+            <div class="technology">
+              <span>Redux </span>
+            </div>
+            <div class="technology">
+              <span>Moment</span>
+            </div>
+            <div class="technology">
+              <span>JWTokens </span>
+            </div>
+            <div class="technology">
+              <span>Express </span>
+            </div>
+            <div class="technology">
+              <span>MongoDB y Mongoose</span>
+            </div>
+          </div>
+          <a rel="noreferrer" href="https://appcalendar.vercel.app/" class="btn btn-primary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/forward-arrow.png" class="icon-btn" alt="Icono de Hipervínculo" />
+            Ver online</a>
+          <a rel="noreferrer" href="https://github.com/mgomez08/Calendar-Frontend" class="btn btn-secondary btn-icon"
+            target="_blank">
+            <img loading="lazy" src="./images/icons/github.png" class="icon-btn" alt="Icono de Github" />
+            Ver repositorio
+          </a>
+        </div>
+        <div class="project">
+          <figure class="container-preview shadow">
+            <img loading="lazy" src="./images/projects/stats-preview-card.jpg"
+              alt="Preview del Proyecto Stats preview card component" class="project-preview" />
+          </figure>
+          <p class="project-title">Stats preview component</p>
+          <p class="project-description">
+            Este es un desafío de Frontendmentor, consiste en un componente
+            Card con responsive design sin frameworks.
+          </p>
+          <p class="title-technologies">Tecnologías y conceptos usados:</p>
+          <div class="technologies">
+            <div class="technology">
+              <span>HTML</span>
+            </div>
+            <div class="technology">
+              <span>CSS </span>
+            </div>
+          </div>
+          <a rel="noreferrer" href="https://mgomez08.github.io/Stats-Preview-Card-Component/"
+            class="btn btn-primary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/forward-arrow.png" class="icon-btn" alt="Icono de Hipervínculo" />
+            Ver online</a>
+          <a rel="noreferrer" href="https://github.com/mgomez08/Stats-Preview-Card-Component"
+            class="btn btn-secondary btn-icon" target="_blank">
+            <img loading="lazy" src="./images/icons/github.png" class="icon-btn" alt="Icono de Github" />
+            Ver repositorio
+          </a>
+        </div>
+      </div>
+      <a rel="noreferrer" href="https://github.com/mgomez08?tab=repositories" target="_blank"
+        class="btn btn-info my-2">Ver más</a>
+    </section>
+    <section class="container educations" id="educations">
+      <h3 class="title-educations">Experiencia Académica</h3>
+      <div class="educations-list">
+        <div class="education">
+          <a rel="noreferrer"
+            href="https://assets.alkemy.org/certificates/google-oauth2%7C113015928336095761524/a52e18ee-8ea9-4d35-949f-60b2c2e9c1f7.pdf"
+            class="title-education alkemy underline" target="_blank">
+            Alkemy - Aceleración en React
+          </a>
+          <p class="education-finished-date">Finalizado en el 2022</p>
+          <p class="education-description">
+            Es una plataforma de entrenamiento en donde desarrolladores de
+            software trainee / junior Aceleran y Certifican sus habilidades en
+            React, a través de la simulación de un ambiente real de trabajo
+            usando metodologías ágiles.
+          </p>
+        </div>
+        <div class="education">
+          <a rel="noreferrer" href="https://platzi.com/p/magodev/" class="title-education platzi underline"
+            target="_blank">
+            Platzi - Escuela de Desarrollo Web
+          </a>
+          <p class="education-finished-date">2020 - Presente</p>
+          <p class="education-description">
+            Escuela con más de 100 cursos con un 25% aprobado, he logrado
+            aprender y desenvolverme en tecnologías modernas como React,
+            Frameworks de Css, Node con Express.
+          </p>
+        </div>
+        <div class="education">
+          <p class="title-education itfip">ITFIP - Ingeniería de Sistemas</p>
+          <p class="education-finished-date">2018 – 2025</p>
+          <p class="education-description">
+            Carrera finalizada. Titulado con capacidad para diseñar y construir
+            soluciones web empleando las mejores tecnologías y herramientas de
+            desarrollo.
+          </p>
+        </div>
+        <div class="education">
+          <a rel="noreferrer" href="https://www.udemy.com/certificate/UC-9e30aabb-1986-44f1-adef-a15b02cee730/"
+            class="title-education udemy underline" target="_blank">
+            Udemy - React: De cero a experto(Hooks y MERN)
+          </a>
+          <p class="education-finished-date">Finalizado en el 2021</p>
+          <p class="education-description">
+            Curso de react con 43 horas de duración en el que aprendí a
+            implementar el stack MERN, Context API, Hooks, JWT para
+            Autenticaciones, Testing, CRUD, SASS, Multiple Routers, etc.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social-media">
+      <a rel="noreferrer" href="https://github.com/mgomez08" target="_blank">
+        <img loading="lazy" src="images/icons/github.png" class="social-item bg-white" alt="Icono de Github" />
+      </a>
+      <a rel="noreferrer" href="https://www.linkedin.com/in/magodev/" target="_blank bg-white">
+        <img loading="lazy" src="./images/icons/linkedin.png" class="social-item bg-white" alt="Icono de Linkedin" />
+      </a>
+    </div>
+  </footer>
+  <script defer src="./app.js"></script>
+</body>
+
 </html>
